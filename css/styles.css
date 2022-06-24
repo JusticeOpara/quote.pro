@@ -1,0 +1,151 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #14a58f;
+    background-image: url(https://www.teahub.io/photos/full/79-790310_top-most-amazing-stunning-and-inspiring-abstract-3d.png);
+    /* background-image: url(https://c4.wallpaperflare.com/wallpaper/581/868/873/steve-jobs-face-wallpaper-preview.jpg); */
+
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    color: #ffff;
+}
+
+nav {
+    display: none;
+}
+
+
+.content .quote-area {
+    display: flex;
+    justify-content: center;
+}
+
+.quote-area i {
+    font-size: 2rem;
+}
+
+
+.quote-area .quote {
+    font-size: 1.6rem;
+    text-align: center;
+    word-break: break-all;
+    color: #fff;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.content {
+    /* background-color: darkturquoise; */
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+
+.arrows {
+    color: #fff; 
+}
+.sharePage{
+    color: #fff;
+}
+.bookmark {
+    color: #fff;
+}
+
+.features {
+    color: #fff;
+    font-size: 300%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40vw;
+    /* background-color: darkkhaki; */
+}
+
+.heart-icon {
+    width: 60px;
+    fill: transparent;
+    stroke-width: 30;
+    transition: all 0.5s;
+}
+
+.heart-icon.active {
+    animation: like 0.5s 1;
+    fill: red;
+    stroke: none;
+}
+
+
+
+@keyframes like {
+    0% {
+        transform: scale(1);
+    }
+
+    90% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+
+
+
+@media(max-width:768px) {
+    body {
+
+        background-attachment: fixed;
+    }
+
+    nav {
+        display: contents;
+        font-size: 150%;
+        /* margin-left: 3px; */
+        width: 50%;
+        /* float: right; */
+    }
+    .heading{
+        display: none;
+    }
+    .content {
+        max-width: 60vh;
+    }
+
+    .features {
+        font-size: 250%;
+    }
+
+    .heart-icon {
+        width: 35px;
+    }
+    .arrows{
+        background-color: #14a58f;
+        border-radius: 100%;
+        width: 30%;
+        padding-left: 10px;
+    }
+    .bookmark {
+        display: none;
+    }
+}
