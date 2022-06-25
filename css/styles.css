@@ -17,7 +17,32 @@ body {
 nav {
     display: none;
 }
+h1{
+    font-size: 500%;
+}
+.header{
+     /* background-color: aliceblue;  */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40vh;
+    line-height: 500%; 
+}
+.font-quote {
+    font-size: 700%;
+}
 
+.first-page {
+    background-color: #14a58f;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .content .quote-area {
     display: flex;
@@ -60,11 +85,13 @@ nav {
 }
 
 .arrows {
-    color: #fff; 
-}
-.sharePage{
     color: #fff;
 }
+
+.sharePage {
+    color: #fff;
+}
+
 .bookmark {
     color: #fff;
 }
@@ -93,7 +120,9 @@ nav {
     stroke: none;
 }
 
-
+.hidden {
+    display: none;
+}
 
 @keyframes like {
     0% {
@@ -125,9 +154,18 @@ nav {
         width: 50%;
         /* float: right; */
     }
-    .heading{
+
+    h1{
+        font-size: 200%;
+        font-weight: 900;
+    }
+    .font-quote{
+      font-size: 500%;
+    }
+    .heading {
         display: none;
     }
+
     .content {
         max-width: 60vh;
     }
@@ -139,13 +177,17 @@ nav {
     .heart-icon {
         width: 35px;
     }
-    .arrows{
+
+    .arrows {
         background-color: #14a58f;
         border-radius: 100%;
         width: 30%;
         padding-left: 10px;
     }
+
     .bookmark {
         display: none;
     }
+
+
 }

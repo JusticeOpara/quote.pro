@@ -2,8 +2,8 @@
 // window.addEventListener("load",()=>{
 const quoteText = document.querySelector(".quote")
 const authorName = document.querySelector(".name")
-
-
+const firstPage = document.getElementById("first-part")
+const secondPage = document.getElementById("second-part")
 
 fetch("https://type.fit/api/quotes")
     .then((response) => response.json())
@@ -17,10 +17,17 @@ fetch("https://type.fit/api/quotes")
         quoteText.innerHTML = formatedData[index].text
         authorName.innerHTML =  formatedData[index].author
         console.log(index,"INDEX")
-      }, 5000);
-    }
+      }, 7000);
+    
+    setTimeout()
+    }).catch((err) => console.log(err, "quotes are not found"))
 
-    ).catch((err) => console.log(err, "quotes are not found"))
+
+
+ setTimeout(() => {
+     secondPage.classList.remove('hidden')
+       firstPage.classList.add('hidden')
+ }, 5000);
 
 const iconBtn = document.querySelector(".heart-icon");
 iconBtn.onclick = function () {
